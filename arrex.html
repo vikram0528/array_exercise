@@ -1,0 +1,72 @@
+<!doctype>
+<html>
+<head></head>
+<body>
+<script>
+
+var a = [1,2,3,4]
+
+var sum = 0;
+
+var result4  = a.reduce((b,c) => b + c )
+
+console.log(result4)
+
+var result5 = a.forEach( (e) => {
+
+sum = sum+e;
+
+})
+
+console.log(sum)
+
+
+
+
+
+
+
+input : [1,4,56,77,85,34,67,8]
+output: [4,56,34,8]
+
+
+var input = [1,4,56,77,85,34,67,8];
+
+var a = [];
+
+for(i=0; i<input.length; i++)
+{
+
+if(input[i]%2 == 0){
+
+a.push(input[i])
+
+}
+
+}
+
+console.log(a)
+
+Input : [3,8,-2,-4,6,-5]
+Output : [-2,-4,-5]
+
+
+var input1 = [3,8,-2,-4,6,-5];
+
+var b = []
+
+for(i=0; i<input1.length; i++)
+{
+
+if(input1[i]<0)
+{
+
+b.push(input1[i])
+
+}
+} 
+
+console.log(b)
+</script>
+</body>
+</html>
